@@ -1,0 +1,156 @@
+<div class="container-fluid mt-3">
+    <div class="card box-shadow">
+      <div class="card-header tabla-personalizado text-white">
+        <h1 class="text-center nav-link"><strong>Médicos</strong></h1>
+      </div>
+      <div class="card-body">
+        <table class="table table-striped" style="font-size: 15px">
+          <thead>
+            <tr>
+              <th scope="col" class="tabla-personalizado">Especialidades</th>
+              <th scope="col" class="tabla-personalizado">Nombres</th>
+              <th scope="col" class="tabla-personalizado">Apellidos</th>
+              <th scope="col" class="tabla-personalizado">Dirección</th>
+              <th scope="col" class="tabla-personalizado">Teléfono</th>
+              <th scope="col" class="tabla-personalizado">Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Medicina General</option>
+                  <option value="1">Odontología</option>
+                  <option value="2">Neurología</option>
+                  <option value="3">Pediatría</option>
+                </select>
+              </th>
+              <td>Luis</td>
+              <td>Baquiax</td>
+              <td>Totonicapán</td>
+              <td>84849584</td>
+              <td>
+                <a
+                  href="#"
+                  class="btn btn-dark btn-sm"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalEditMedico"
+                  ><i class="fa-solid fa-magnifying-glass"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn btn-dark btn-sm"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalEditMedico"
+                  ><i class="fa-regular fa-pen-to-square"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn btn-dark btn-sm"
+                  onclick="showConfirm('¿Quiere elimanar al médico?')"
+                  ><i class="fa-solid fa-trash"></i
+                ></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal medico -->
+  <div
+    class="modal fade"
+    id="modalEditMedico"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <form class="validate-form" action="#" method="get">
+            <h1 class="login100-form-title mb-3">
+              <strong>Edición de médico</strong>
+            </h1>
+  
+            <div class="row">
+              <div class="col">
+                <div
+                  class="wrap-input100 validate-input"
+                  data-validate="Valid email is required: ex@abc.xyz"
+                >
+                  <input class="input100" type="text" name="email" id="email" />
+                  <span class="focus-input100"></span>
+                  <span class="label-input100">Primer nombre</span>
+                </div>
+  
+                <div
+                  class="wrap-input100 validate-input"
+                  data-validate="Valid email is required: ex@abc.xyz"
+                >
+                  <input class="input100" type="text" name="email" id="email" />
+                  <span class="focus-input100"></span>
+                  <span class="label-input100">Segundo nombre</span>
+                </div>
+  
+                <div
+                  class="wrap-input100 validate-input"
+                  data-validate="Valid email is required: ex@abc.xyz"
+                >
+                  <input class="input100" type="text" name="email" id="email" />
+                  <span class="focus-input100"></span>
+                  <span class="label-input100">Primer apellido</span>
+                </div>
+  
+                <div
+                  class="wrap-input100 validate-input"
+                  data-validate="Valid email is required: ex@abc.xyz"
+                >
+                  <input class="input100" type="text" name="email" id="email" />
+                  <span class="focus-input100"></span>
+                  <span class="label-input100">Segundo apellido</span>
+                </div>
+              </div>
+  
+              <div class="col">
+                <div
+                  class="wrap-input100 validate-input"
+                  data-validate="Valid email is required: ex@abc.xyz"
+                >
+                  <input class="input100" type="text" name="email" id="email" />
+                  <span class="focus-input100"></span>
+                  <span class="label-input100">Dirección</span>
+                </div>
+  
+                <div
+                  class="wrap-input100 validate-input"
+                  data-validate="Valid email is required: ex@abc.xyz"
+                >
+                  <input class="input100" type="text" name="email" id="email" />
+                  <span class="focus-input100"></span>
+                  <span class="label-input100">Teléfono</span>
+                </div>
+              </div>
+            </div>
+  
+            <div class="container-login100-form-btn mb-3">
+              <button class="login100-form-btn" style="font-size: 25px">
+                Guardar cambios
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end modal -->
+  
